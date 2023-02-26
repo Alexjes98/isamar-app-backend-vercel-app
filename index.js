@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static('./img'))
 
-const mysql = require("mysql2");
+const mysql = require("mysql");
 const util = require("util");
 
 const connection = mysql.createConnection({
